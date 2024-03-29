@@ -12,7 +12,7 @@ on:
       remote_state_table:
         required: true
 
-name: "Cloudfront dist. and S3 buckets"
+name: "Cloudfront and S3 buckets"
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -39,7 +39,10 @@ jobs:
         echo "encrypt = true" >> state.tfvars
     - name: Terraform Format
       id: fmt
-      run: terraform fmt -check
+      run: |
+        cd ..
+        terraform fmt -check
+        cd main
     - name: Terraform Init
       id: init
       run: terraform init -reconfigure -backend-config="state.tfvars"
