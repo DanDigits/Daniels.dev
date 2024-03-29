@@ -86,8 +86,8 @@ deployment:
 
 menu:
   main:
-    - indentifier: Blog
-      name: Blog
+    - indentifier: blog/
+      name: blog/
       url: /posts
       weight: 1
     # - indentifier: categories
@@ -98,7 +98,7 @@ menu:
     #   name: Tags
     #   url: /tags
     #   weight: 20
-    - indentifier: About
-      name: About
+    - indentifier: about/
+      name: about/
       url: /about
       weight: 100
