@@ -48,7 +48,7 @@ params:
       - "Powered by <a href=\"http://gohugo.io\">Hugo</a>"
       - "Made with &#10084; by <a href=\"https://github.com/rhazdon\">Djordje Atlialp</a>"
 
-  plausibleDataDomain: 'Daniels.dev'
+  plausibleDataDomain: 'https://daniels.dev'
   plausibleScriptSource: 'https://plausible.io/js/script.js'
   # csp: UNCOMMENT ONCE PLAUSIBLE PARTIAL IN PLACE
   #   scriptsrc:
