@@ -6,9 +6,9 @@ on:
 name: Deploy to production
 jobs:
   terrascan:
-    uses: ./github/workflows/terrascan.yaml
+    uses: ./.github/workflows/terrascan.yaml
   infrastructure:
-    uses: ./github/workflows/terraform.yaml
+    uses: ./.github/workflows/terraform.yaml
     needs: 
       - terrascan
     secrets:
