@@ -1,0 +1,52 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Posts on Daniel Cruz-Castro</title>
+        <link>//localhost:1313/posts/</link>
+        <description>Recent content in Posts on Daniel Cruz-Castro</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <copyright>License</copyright>
+        <lastBuildDate>Thu, 08 Feb 2024 01:14:38 -0500</lastBuildDate>
+        <atom:link href="//localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+        
+        <item>
+            <title>Second</title>
+            <link>//localhost:1313/posts/second/</link>
+            <pubDate>Thu, 08 Feb 2024 01:14:38 -0500</pubDate>
+            
+            <guid>//localhost:1313/posts/second/</guid>
+            <description>hi asdf
+hi2 asdfasfd
+hi3 asdfasfd</description>
+            <content type="html"><![CDATA[<h2 id="hi">hi</h2>
+<p>asdf</p>
+<h2 id="hi2">hi2</h2>
+<p>asdfasfd</p>
+<h2 id="hi3">hi3</h2>
+<p>asdfasfd</p>
+]]></content>
+        </item>
+        
+        <item>
+            <title>First Post</title>
+            <link>//localhost:1313/posts/first/</link>
+            <pubDate>Thu, 08 Feb 2024 01:14:34 -0500</pubDate>
+            
+            <guid>//localhost:1313/posts/first/</guid>
+            <description>First header Test smaller heading 3 4 Five More text
+int main(test) { code; return 0; } </description>
+            <content type="html"><![CDATA[<h2 id="first-header">First header</h2>
+<h2 id="test-smaller-heading">Test smaller heading</h2>
+<h3 id="3">3</h3>
+<h3 id="4">4</h3>
+<h2 id="five">Five</h2>
+<p>More text</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>int main<span style="color:#f92672">(</span>test<span style="color:#f92672">)</span> <span style="color:#f92672">{</span>
+</span></span><span style="display:flex;"><span>    code;
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> 0;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div>]]></content>
+        </item>
+        
+    </channel>
+</rss>

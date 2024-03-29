@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Daniel Cruz-Castro</title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on Daniel Cruz-Castro</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>License</copyright>
+    <lastBuildDate>Thu, 28 Mar 2024 21:03:20 -0400</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Second</title>
+      <link>//localhost:1313/posts/second/</link>
+      <pubDate>Thu, 08 Feb 2024 01:14:38 -0500</pubDate>
+      <guid>//localhost:1313/posts/second/</guid>
+      <description>hi asdf&#xA;hi2 asdfasfd&#xA;hi3 asdfasfd</description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>//localhost:1313/about/</link>
+      <pubDate>Thu, 08 Feb 2024 01:14:34 -0500</pubDate>
+      <guid>//localhost:1313/about/</guid>
+      <description>Hi! My name is Daniel; I&amp;rsquo;m currently a student and I hope to find work in cloud or software engineering!&#xA;Currently the blog is in development mode with the infrastructure still yet being set up, so it&amp;rsquo;s not yet ready for prime time and blog posts, but stay tuned! I hope to detail my adventures and learnings on here once I get to it.</description>
+    </item>
+    <item>
+      <title>First Post</title>
+      <link>//localhost:1313/posts/first/</link>
+      <pubDate>Thu, 08 Feb 2024 01:14:34 -0500</pubDate>
+      <guid>//localhost:1313/posts/first/</guid>
+      <description>First header Test smaller heading 3 4 Five More text&#xA;int main(test) { code; return 0; } </description>
+    </item>
+    <item>
+      <title>Archives</title>
+      <link>//localhost:1313/archives/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/archives/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

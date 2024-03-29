@@ -1,0 +1,50 @@
+on:
+  workflow_call:
+    secrets:
+      aws_access_key_id:
+        required: true
+      aws_secret_access_key:
+        required: true
+      remote_state_bucket:
+        required: true
+      remote_state_key:
+        required: true
+      remote_state_table:
+        required: true
+
+name: "Cloudfront dist. and S3 buckets"
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      AWS_ACCESS_KEY_ID: ${{ secrets.aws_access_key_id }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.aws_secret_access_key }}
+    defaults:
+      run:
+        working-directory: ./terraform/main
+    steps:
+    - name: Check out the codebase
+      uses: actions/checkout@v4
+    - name: Setup Terraform
+      uses: hashicorp/setup-terraform@v3
+      with:
+        terraform_version: 1.5.7
+        terraform_wrapper: false
+    - name: Create remote state file
+      run: |
+        echo "bucket = \"${{ secrets.remote_state_bucket }}\"" >> state.tfvars
+        echo "key = \"${{ secrets.remote_state_key }}\"" >> state.tfvars
+        echo "region = \"us-east-1\"" >> state.tfvars
+        echo "dynamodb_table = \"${{ secrets.remote_state_table }}\"" >> state.tfvars
+        echo "encrypt = true" >> state.tfvars
+    - name: Terraform Format
+      id: fmt
+      run: terraform fmt -check
+    - name: Terraform Init
+      id: init
+      run: terraform init -reconfigure -backend-config="state.tfvars"
+    - name: Terraform Plan
+      id: plan
+      run: terraform plan -var-file="variables.tfvars"
+    # - name: Terraform Apply
+    #   run: terraform apply --auto-approve
