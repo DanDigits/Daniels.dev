@@ -7,7 +7,7 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>License</copyright>
-    <lastBuildDate>Thu, 28 Mar 2024 21:03:20 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 28 Mar 2024 21:13:41 -0400</lastBuildDate>
     <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Second</title>
@@ -28,7 +28,7 @@
       <link>//localhost:1313/posts/first/</link>
       <pubDate>Thu, 08 Feb 2024 01:14:34 -0500</pubDate>
       <guid>//localhost:1313/posts/first/</guid>
-      <description>First header Test smaller heading 3 4 Five More text&#xA;int main(test) { code; return 0; } </description>
+      <description>First header Test smaller heading Content&#xA;Second smaller heading More Content&#xA;if [ you see this ]; then echo &amp;#39;it worked!&amp;#39; else echo &amp;#39;it did not work&amp;#39; fi </description>
     </item>
     <item>
       <title>Archives</title>
